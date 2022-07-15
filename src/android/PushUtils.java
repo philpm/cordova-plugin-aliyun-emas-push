@@ -105,6 +105,7 @@ public class PushUtils {
             try {
                 appInfo = application.getPackageManager().getApplicationInfo(application.getPackageName(), PackageManager.GET_META_DATA);
                 channelId = appInfo.metaData.getString("CHANNEL_ID", "").trim();
+                Log.d(TAG, "CHANNEL_ID:" + channelId);
             } catch (PackageManager.NameNotFoundException e) {
                 e.printStackTrace();
                 Log.d(TAG, "CHANNEL_ID NOT FOUND!");

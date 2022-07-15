@@ -11,7 +11,7 @@ import android.util.Log;
 public class PushApplication extends Application {
     public static final String TAG = PushApplication.class.getSimpleName();
     private static PushApplication instance;
-    private static String ChannelProcessName = "自己的应用包名:channel";
+    private static String ChannelProcessName = "jp.co.shimadzu.cGetBetaPhase3:channel";
     public static boolean CordovaInit = true;
     
     @Override
